@@ -1,0 +1,58 @@
+version: "1"
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: dockerfile
+    restart: unless-stopped
+    ports:
+      - "8085:8085"
+    volumes:
+      - ./:/var/www
+    depends_on:
+      - aksarayotta-db
+    environment:
+      DB_HOST: aksarayotta-db
+      DB_PORT: 3306
+      DB_DATABASE: aksarayotta
+      DB_USERNAME: aksarayotta
+      DB_PASSWORD: MLtalBcE867g
+    networks:
+      - aksarayotta
+
+  aksarayotta-db:
+    image: mysql:8.0
+    container_name: aksarayotta-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: aksarayotta
+      MYSQL_ROOT_PASSWORD: MLtalBcE867g
+      MYSQL_PASSWORD: MLtalBcE867g
+      MYSQL_USER: aksarayotta
+    volumes:
+      - ./aksarayotta-compose/mysql:/docker-entrypoint-initdb.d
+      - ./aksarayotta-compose/mysql/logs:/var/log/mysql
+      - ./aksarayotta-compose/mysql/data:/var/lib/mysql
+    networks:
+      - aksarayotta
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: aksarayotta-phpmyadmin
+    ports:
+      - 7075:80
+    links:
+      - aksarayotta-db
+    restart: unless-stopped
+    environment:
+      PMA_HOST: aksarayotta-db
+      PMA_USER: aksarayotta
+      PMA_PASSWORD: MLtalBcE867g
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    networks:
+      - aksarayotta
+
+networks:
+  aksarayotta:
+    driver: bridge
