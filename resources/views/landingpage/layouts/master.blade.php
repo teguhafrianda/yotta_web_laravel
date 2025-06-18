@@ -51,7 +51,7 @@
     </div>
 
     <!-- Start Header Area -->
-    @include('landingpage.layouts.Header')
+    @include('landingpage.layouts.header')
     
 
     <!-- Start Side Vav -->

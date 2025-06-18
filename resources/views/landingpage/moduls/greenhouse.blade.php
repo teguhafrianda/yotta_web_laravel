@@ -79,6 +79,57 @@
         </div>
     </div>
 </div>
-
-
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+const ctx = document.getElementById('greenhouseChart').getContext('2d');
+new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['18:00', '18:30', '19:00', '19:30', '20:00'],
+        datasets: [
+            {
+                label: 'Suhu Udara (°C)',
+                data: [27.0, 29.0, 26.9, 28.1, 27.4],
+                borderColor: 'rgba(255, 99, 132, 1)',
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                tension: 0.4
+            },
+            {
+                label: 'Kelembaban Tanah (%)',
+                data: [66, 59, 68, 62, 65],
+                borderColor: 'rgba(54, 162, 235, 1)',
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                tension: 0.4
+            },
+            {
+                label: 'Kelembaban Udara (%)',
+                data: [59, 63, 55, 60, 58],
+                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                tension: 0.4
+            },
+            {
+                label: 'Cahaya (lux)',
+                data: [11500, 10200, 13000, 9500, 11000],
+                borderColor: 'rgba(255, 206, 86, 1)',
+                backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                tension: 0.4
+            }
+        ]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top'
+            }
+        },
+        scales: {
+            y: {
+                beginAtZero: false
+            }
+        }
+    }
+});
+</script>
 @endsection
