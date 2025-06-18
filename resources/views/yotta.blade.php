@@ -13,7 +13,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon.png') }}">
 
     <!-- CSS
-	============================================ -->
+ ============================================ -->
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/vendor/slick-theme.css') }}">
@@ -39,12 +39,14 @@
         <ul>
             <li>
                 <a href="javascript: void(0);" data-theme="light" class="setColor light">
-                    <img src="{{ asset('assets/images/about/sun-01.svg') }}" alt="Sun images"><span title="Light Mode"> Light</span>
+                    <img src="{{ asset('assets/images/about/sun-01.svg') }}" alt="Sun images"><span title="Light Mode">
+                        Light</span>
                 </a>
             </li>
             <li>
                 <a href="javascript: void(0);" data-theme="dark" class="setColor dark">
-                    <img src="{{ asset('assets/images/about/vector.svg') }}" alt="Vector Images"><span title="Dark Mode"> Dark</span>
+                    <img src="{{ asset('assets/images/about/vector.svg') }}" alt="Vector Images"><span
+                        title="Dark Mode"> Dark</span>
                 </a>
             </li>
         </ul>
@@ -99,11 +101,11 @@
                         <!-- Start OffCanvas Menu  -->
                         <div class="rbt-offcanvas-trigger" id="rbt-offcanvas-activation">
                             <span class="offcanvas-trigger">
-                            <span class="offcanvas-bars">
-                                <span></span>
-                            <span></span>
-                            <span></span>
-                            </span>
+                                <span class="offcanvas-bars">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
                             </span>
                         </div>
                         <!-- End OffCanvas Menu  -->
@@ -141,7 +143,8 @@
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
                                     <a href="course-details.html">
-                                        <img src="{{ asset('assets/images/course/course-online-01.jpg') }}" alt="Card image">
+                                        <img src="{{ asset('assets/images/course/course-online-01.jpg') }}"
+                                            alt="Card image">
                                     </a>
                                 </div>
                                 <div class="rbt-card-body">
@@ -173,7 +176,8 @@
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
                                     <a href="course-details.html">
-                                        <img src="{{ asset('assets/images/course/course-online-02.jpg') }}" alt="Card image">
+                                        <img src="{{ asset('assets/images/course/course-online-02.jpg') }}"
+                                            alt="Card image">
                                     </a>
                                 </div>
                                 <div class="rbt-card-body">
@@ -205,7 +209,8 @@
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
                                     <a href="course-details.html">
-                                        <img src="{{ asset('assets/images/course/course-online-03.jpg') }}" alt="Card image">
+                                        <img src="{{ asset('assets/images/course/course-online-03.jpg') }}"
+                                            alt="Card image">
                                     </a>
                                 </div>
                                 <div class="rbt-card-body">
@@ -237,7 +242,8 @@
                             <div class="rbt-card variation-01 rbt-hover">
                                 <div class="rbt-card-img">
                                     <a href="course-details.html">
-                                        <img src="{{ asset('assets/images/course/course-online-04.jpg') }}" alt="Card image">
+                                        <img src="{{ asset('assets/images/course/course-online-04.jpg') }}"
+                                            alt="Card image">
                                     </a>
                                 </div>
                                 <div class="rbt-card-body">
@@ -359,9 +365,11 @@
                                     <span class="subtitle bg-primary-opacity">Enjoy Monitoring!</span>
                                 </div>
 
-                                <h1 class="banner-title">Internet of Think<span class="theme-gradient"><br>Yotta Aksara Energy</span></h1>
+                                <h1 class="banner-title">Internet of Things<span class="theme-gradient"><br>Yotta
+                                        Aksara Energy</span></h1>
 
-                                <p class="description has-medium-font-size mt--20">Discover IoT innovations by Yotta — air quality monitoring, 
+                                <p class="description has-medium-font-size mt--20">Discover IoT innovations by Yotta —
+                                    air quality monitoring,
                                     greenhouse automation, outdoor farming, and soil management & testing.</p>
 
                                 <div class="slider-btn rbt-button-group justify-content-center">
@@ -388,7 +396,9 @@
                                 <div class="swiper-slide">
                                     <div class="team team-style--bottom variation-2">
                                         <div class="thumbnail">
-                                            <a href="#"><img src="{{ asset('assets/images/IoT/Air Quality IoT.png') }}" alt="Blog Images"></a>
+                                            <a href="#"><img
+                                                    src="{{ asset('assets/images/IoT/Air Quality IoT.png') }}"
+                                                    alt="Blog Images"></a>
                                         </div>
                                         <div class="content">
                                             <div class="inner">
@@ -404,7 +414,9 @@
                                 <div class="swiper-slide">
                                     <div class="team team-style--bottom variation-2">
                                         <div class="thumbnail">
-                                            <a href="#"><img src="{{ asset('assets/images/IoT/Green House.png') }}" alt="Blog Images"></a>
+                                            <a href="#"><img
+                                                    src="{{ asset('assets/images/IoT/Green House.png') }}"
+                                                    alt="Blog Images"></a>
                                         </div>
                                         <div class="content">
                                             <div class="inner">
@@ -420,7 +432,9 @@
                                 <div class="swiper-slide">
                                     <div class="team team-style--bottom variation-2">
                                         <div class="thumbnail">
-                                            <a href="#"><img src="{{ asset('assets/images/IoT/Outdoor Farming.png') }}" alt="Blog Images"></a>
+                                            <a href="#"><img
+                                                    src="{{ asset('assets/images/IoT/Outdoor Farming.png') }}"
+                                                    alt="Blog Images"></a>
                                         </div>
                                         <div class="content">
                                             <div class="inner">
@@ -436,7 +450,8 @@
                                 <div class="swiper-slide">
                                     <div class="team team-style--bottom variation-2">
                                         <div class="thumbnail">
-                                            <a href="#"><img src="{{ asset('assets/images/IoT/Soil.png') }}" alt="Blog Images"></a>
+                                            <a href="#"><img src="{{ asset('assets/images/IoT/Soil.png') }}"
+                                                    alt="Blog Images"></a>
                                         </div>
                                         <div class="content">
                                             <div class="inner">
@@ -450,213 +465,218 @@
                                     </div>
                                 </div>
 
-                            <div class="rbt-swiper-arrow rbt-arrow-left">
-                                <div class="custom-overfolow">
-                                    <i class="rbt-icon feather-arrow-left"></i>
-                                    <i class="rbt-icon-top feather-arrow-left"></i>
-                                </div>
-                            </div>
-
-                            <div class="rbt-swiper-arrow rbt-arrow-right">
-                                <div class="custom-overfolow">
-                                    <i class="rbt-icon feather-arrow-right"></i>
-                                    <i class="rbt-icon-top feather-arrow-right"></i>
-                                </div>
-                            </div>
-
-
-                            <div class="rbt-swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Banner Area  -->
-
-
-    <!-- Start Footer aera -->
-    <footer class="rbt-footer footer-style-1">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row row--15 mt_dec--30">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
-                        <div class="footer-widget">
-                            <div class="logo logo-dark">
-                                <a href="index.html">
-                                    <img src="{{ asset('assets/images/IoT/logo.jpg') }}" alt="Edu-cause">
-                                </a>
-                            </div>
-                            <div class="logo d-none logo-light">
-                                <a href="index.html">
-                                    <img src="{{ asset('assets/images/IoT/logotrans.png') }}" alt="Edu-cause">
-                                </a>
-                            </div>
-
-                            <p class="description mt--20">We’re always in search for talented
-                                and motivated people. Don’t be shy introduce yourself!
-                            </p>
-
-                            <div class="contact-btn mt--30">
-                                <a class="rbt-btn hover-icon-reverse btn-border-gradient radius-round" href="#">
-                                    <div class="icon-reverse-wrapper">
-                                        <span class="btn-text">Contact With Us</span>
-                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
-                                        <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                <div class="rbt-swiper-arrow rbt-arrow-left">
+                                    <div class="custom-overfolow">
+                                        <i class="rbt-icon feather-arrow-left"></i>
+                                        <i class="rbt-icon-top feather-arrow-left"></i>
                                     </div>
-                                </a>
+                                </div>
+
+                                <div class="rbt-swiper-arrow rbt-arrow-right">
+                                    <div class="custom-overfolow">
+                                        <i class="rbt-icon feather-arrow-right"></i>
+                                        <i class="rbt-icon-top feather-arrow-right"></i>
+                                    </div>
+                                </div>
+
+
+                                <div class="rbt-swiper-pagination"></div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Banner Area  -->
 
-                    <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6 col-12 mt--30">
-                        <div class="footer-widget">
-                            <h5 class="ft-title">Useful Links</h5>
-                            <ul class="ft-link">
-                                <li>
-                                    <a href="12-marketplace.html">Marketplace</a>
-                                </li>
-                                <li>
-                                    <a href="04-kindergarten.html">kindergarten</a>
-                                </li>
-                                <li>
-                                    <a href="13-university-classic.html">University</a>
-                                </li>
-                                <li>
-                                    <a href="09-gym-coaching.html">GYM Coaching</a>
-                                </li>
-                                <li>
-                                    <a href="faqs.html">FAQ</a>
-                                </li>
-                            </ul>
+
+        <!-- Start Footer aera -->
+        <footer class="rbt-footer footer-style-1">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row row--15 mt_dec--30">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--30">
+                            <div class="footer-widget">
+                                <div class="logo logo-dark">
+                                    <a href="index.html">
+                                        <img src="{{ asset('assets/images/IoT/logo.jpg') }}" alt="Edu-cause">
+                                    </a>
+                                </div>
+                                <div class="logo d-none logo-light">
+                                    <a href="index.html">
+                                        <img src="{{ asset('assets/images/IoT/logotrans.png') }}" alt="Edu-cause">
+                                    </a>
+                                </div>
+
+                                <p class="description mt--20">We’re always in search for talented
+                                    and motivated people. Don’t be shy introduce yourself!
+                                </p>
+
+                                <div class="contact-btn mt--30">
+                                    <a class="rbt-btn hover-icon-reverse btn-border-gradient radius-round"
+                                        href="#">
+                                        <div class="icon-reverse-wrapper">
+                                            <span class="btn-text">Contact With Us</span>
+                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="feather-arrow-right"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-2 col-md-6 col-sm-6 col-12 mt--30">
-                        <div class="footer-widget">
-                            <h5 class="ft-title">Our Company</h5>
-                            <ul class="ft-link">
-                                <li>
-                                    <a href="contact.html">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="become-a-teacher.html">Become Teacher</a>
-                                </li>
-                                <li>
-                                    <a href="aksarayotta.com">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="instructor.html">Instructor</a>
-                                </li>
-                                <li>
-                                    <a href="event-list.html">Events</a>
-                                </li>
-                            </ul>
+                        <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6 col-12 mt--30">
+                            <div class="footer-widget">
+                                <h5 class="ft-title">Useful Links</h5>
+                                <ul class="ft-link">
+                                    <li>
+                                        <a href="12-marketplace.html">Marketplace</a>
+                                    </li>
+                                    <li>
+                                        <a href="04-kindergarten.html">kindergarten</a>
+                                    </li>
+                                    <li>
+                                        <a href="13-university-classic.html">University</a>
+                                    </li>
+                                    <li>
+                                        <a href="09-gym-coaching.html">GYM Coaching</a>
+                                    </li>
+                                    <li>
+                                        <a href="faqs.html">FAQ</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--30">
-                        <div class="footer-widget">
-                            <h5 class="ft-title">Get Contact</h5>
-                            <ul class="ft-link">
-                                <li><span>Phone:</span> <a href="#">+62 811-2692-898</a></li>
-                                <li><span>E-mail:</span> <a href="mailto:hr@example.com">layanan@yottaaksara.com</a></li>
-                                <li><span>Location:</span> Workshop: Perumahan Bukit Cemara Tidar Blok G10 No 2, Karangbesuki, Sukun, Kota Malang</li>
-                            </ul>
-                            <ul class="social-icon social-default icon-naked justify-content-start mt--20">
-                                <li><a href="https://www.facebook.com/">
-                                        <i class="feather-facebook"></i>
-                                    </a>
-                                </li>
-                                <li><a href="https://www.twitter.com">
-                                        <i class="feather-twitter"></i>
-                                    </a>
-                                </li>
-                                <li><a href="https://www.instagram.com/">
-                                        <i class="feather-instagram"></i>
-                                    </a>
-                                </li>
-                                <li><a href="https://www.linkdin.com/">
-                                        <i class="feather-linkedin"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-12 mt--30">
+                            <div class="footer-widget">
+                                <h5 class="ft-title">Our Company</h5>
+                                <ul class="ft-link">
+                                    <li>
+                                        <a href="contact.html">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="become-a-teacher.html">Become Teacher</a>
+                                    </li>
+                                    <li>
+                                        <a href="aksarayotta.com">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="instructor.html">Instructor</a>
+                                    </li>
+                                    <li>
+                                        <a href="event-list.html">Events</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt--30">
+                            <div class="footer-widget">
+                                <h5 class="ft-title">Get Contact</h5>
+                                <ul class="ft-link">
+                                    <li><span>Phone:</span> <a href="#">+62 811-2692-898</a></li>
+                                    <li><span>E-mail:</span> <a
+                                            href="mailto:hr@example.com">layanan@yottaaksara.com</a></li>
+                                    <li><span>Location:</span> Workshop: Perumahan Bukit Cemara Tidar Blok G10 No 2,
+                                        Karangbesuki, Sukun, Kota Malang</li>
+                                </ul>
+                                <ul class="social-icon social-default icon-naked justify-content-start mt--20">
+                                    <li><a href="https://www.facebook.com/">
+                                            <i class="feather-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.twitter.com">
+                                            <i class="feather-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/">
+                                            <i class="feather-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.linkdin.com/">
+                                            <i class="feather-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </footer>
+        <!-- End Footer aera -->
+        <div class="rbt-separator-mid">
+            <div class="container">
+                <hr class="rbt-separator m-0">
+            </div>
         </div>
-    </footer>
-    <!-- End Footer aera -->
-    <div class="rbt-separator-mid">
-        <div class="container">
-            <hr class="rbt-separator m-0">
-        </div>
-    </div>
-    <!-- Start Copyright Area  -->
-    <div class="copyright-area copyright-style-1 ptb--20">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
-                    <p class="rbt-link-hover text-center text-lg-start">Copyright © 2025 <a href="https://rainbowthemes.net">Rainbow-Themes.</a> All Rights Reserved</p>
-                </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
-                    <ul class="copyright-link rbt-link-hover justify-content-center justify-content-lg-end mt_sm--10 mt_md--10">
-                        <li><a href="#">Terms of service</a></li>
-                        <li><a href="privacy-policy.html">Privacy policy</a></li>
-                        <li><a href="subscription.html">Subscription</a></li>
-                        <li><a href="login.html">Login & Register</a></li>
-                    </ul>
+        <!-- Start Copyright Area  -->
+        <div class="copyright-area copyright-style-1 ptb--20">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
+                        <p class="rbt-link-hover text-center text-lg-start">Copyright © 2025 <a
+                                href="https://rainbowthemes.net">Rainbow-Themes.</a> All Rights Reserved</p>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
+                        <ul
+                            class="copyright-link rbt-link-hover justify-content-center justify-content-lg-end mt_sm--10 mt_md--10">
+                            <li><a href="#">Terms of service</a></li>
+                            <li><a href="privacy-policy.html">Privacy policy</a></li>
+                            <li><a href="subscription.html">Subscription</a></li>
+                            <li><a href="login.html">Login & Register</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Copyright Area  -->
-    <div class="rbt-progress-parent">
-        <svg class="rbt-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
+        <!-- End Copyright Area  -->
+        <div class="rbt-progress-parent">
+            <svg class="rbt-back-circle svg-inner" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
 
-    <!-- JS
+        <!-- JS
 ============================================ -->
-    <!-- Modernizer JS -->
-    <script src="{{ asset('assets/js/vendor/modernizr.min.js') }}"></script>
-    <!-- jQuery JS -->
-    <script src="{{ asset('assets/js/vendor/jquery.js') }}"></script>
-    <!-- Bootstrap JS -->
-    <script src="{{ asset('assets/js/vendor/bootstrap.min.js') }}"></script>
-    <!-- sal.js') }} -->
-    <script src="{{ asset('assets/js/vendor/sal.js') }}"></script>
-    <!-- Dark Mode Switcher -->
-    <script src="{{ asset('assets/js/vendor/js.cookie.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/jquery.style.switcher.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/swiper.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/jquery-appear.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/odometer.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/backtotop.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/isotop.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/imageloaded.js') }}"></script>
+        <!-- Modernizer JS -->
+        <script src="{{ asset('assets/js/vendor/modernizr.min.js') }}"></script>
+        <!-- jQuery JS -->
+        <script src="{{ asset('assets/js/vendor/jquery.js') }}"></script>
+        <!-- Bootstrap JS -->
+        <script src="{{ asset('assets/js/vendor/bootstrap.min.js') }}"></script>
+        <!-- sal.js') }} -->
+        <script src="{{ asset('assets/js/vendor/sal.js') }}"></script>
+        <!-- Dark Mode Switcher -->
+        <script src="{{ asset('assets/js/vendor/js.cookie.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/jquery.style.switcher.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/swiper.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/jquery-appear.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/odometer.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/backtotop.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/isotop.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/imageloaded.js') }}"></script>
 
-    <script src="{{ asset('assets/js/vendor/wow.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/waypoint.min.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/easypie.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/text-type.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/jquery-one-page-nav.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/bootstrap-select.min.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/jquery-ui.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/magnify-popup.min.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/paralax-scroll.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/paralax.min.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/countdown.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/plyr.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/jodit.min.js') }}"></script>
-    <script src="{{ asset('assets/js/vendor/Sortable.min.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/wow.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/waypoint.min.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/easypie.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/text-type.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/jquery-one-page-nav.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/bootstrap-select.min.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/jquery-ui.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/magnify-popup.min.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/paralax-scroll.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/paralax.min.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/countdown.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/plyr.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/jodit.min.js') }}"></script>
+        <script src="{{ asset('assets/js/vendor/Sortable.min.js') }}"></script>
 
 
 
-    <!-- Main JS -->
-    <script src="{{ asset('assets/js/main.js') }}"></script>
+        <!-- Main JS -->
+        <script src="{{ asset('assets/js/main.js') }}"></script>
 </body>
 
 </html>
