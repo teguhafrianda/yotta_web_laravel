@@ -79,6 +79,7 @@
         </div>
     </div>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 const ctx = document.getElementById('greenhouseChart').getContext('2d');
@@ -132,4 +133,8 @@ new Chart(ctx, {
     }
 });
 </script>
+
+
+
+
 @endsection
