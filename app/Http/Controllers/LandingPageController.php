@@ -14,9 +14,9 @@ class LandingPageController extends Controller
     {
         return view('landingpage.moduls.airquality');
     }
-    public function outdoor()
+    public function solardome()
     {
-        return view('landingpage.moduls.outdoor');
+        return view('landingpage.moduls.solardome');
     }
     public function greenhouse()
     {
@@ -29,5 +29,9 @@ class LandingPageController extends Controller
     public function soiltest()
     {
         return view('landingpage.moduls.soiltest');
+    }
+    public function soilquality()
+    {
+        return view('landingpage.moduls.soilquality');
     }
 }
