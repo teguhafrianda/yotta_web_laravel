@@ -8,18 +8,28 @@
 
     <!-- Chart Section -->
     <div class="row justify-content-center mb-4">
-        <div class="col-xl-8">
-            <div class="card glow-card">
-                <div class="card-header text-center">
-                    <h4 class="mb-0">📈 Monitoring PM2.5 & CO₂</h4>
-                    <p class="text-muted">Trend Data Terbaru</p>
+    <div class="col-xl-8">
+        <div class="card glow-card">
+            <div class="card-header text-center">
+                <div class="d-flex align-items-center justify-content-center mb-3">
+                    <img src="{{ asset('assets/images/IoT/logoum.png') }}" 
+                         alt="Logo Universitas Negeri Malang" 
+                         style="max-height: 60px;" 
+                         class="me-3">
+                    <div class="text-start">
+                        <h4 class="mb-0">Universitas Negeri Malang</h4>
+                        <small class="text-muted">Jl. Semarang No.5, Sumbersari, Lowokwaru, Malang</small>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <canvas id="lineChart"></canvas>
-                </div>
+                <h4 class="mb-0"> Monitoring Kualitas Udara</h4>
+                <p class="text-muted"> 📈 Trend Data Terbaru</p>
+            </div>
+            <div class="card-body">
+                <canvas id="lineChart"></canvas>
             </div>
         </div>
     </div>
+</div>
 
     <!-- Table Section -->
     <div class="row">

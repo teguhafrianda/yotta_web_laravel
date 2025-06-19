@@ -77,7 +77,7 @@
                         <a href="mailto:hello@example.com"><i class="feather-mail"></i>aksara.yotta@gmail.com</a>
                     </li>
                     <li>
-                        <a href="https://wa.me/6285708364407"><i class="feather-phone"></i>(62) 857-0836-4407</a>
+                        <a href="https://wa.me/628112692898"><i class="feather-phone"></i>(62) 811-2692-898</a>
                     </li>
                 </ul>
             </div>
@@ -90,7 +90,7 @@
                         <a href="{{ route('airquality') }}">Air Quality</a>
                     </li>
                     <li>
-                        <a href="{{ route('outdoor') }}">Outdoor Farming</a>
+                        <a href="{{ route('solardome') }}">Solar Dome</a>
                     </li>
                     <li>
                         <a href="{{ route('greenhouse') }}">Greenhouse</a>
@@ -100,6 +100,9 @@
                     </li>
                     <li>
                         <a href="{{ route('soiltest') }}">Soil Testing</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('soilquality') }}">Soil Quality</a>
                     </li>
                     <li>
                         <a href="https://aksarayotta.com/">About Us</a>
@@ -116,8 +119,7 @@
                 </ul>
             </div>
             <ul class="rbt-secondary-menu mt--50">
-                <li><a href="https://wa.me/6285708364407">Contact Us</a></li>
-                <li><a href="https://wa.me/6285708364407">Privacy Policy</a></li>
+                <li><a href="https://wa.me/628112692898">Contact Us</a></li>
             </ul>
         </div>
     </div>
@@ -144,13 +146,10 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
-                    <p class="rbt-link-hover text-center text-lg-start">Copyright © 2025 <a href="https://aksarayotta.com/">Yotta Aksara.</a> All Rights Reserved</p>
-                </div>
+                    </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12">
                     <ul class="copyright-link rbt-link-hover justify-content-center justify-content-lg-end mt_sm--10 mt_md--10">
-                        <li><a href="#">Terms of service</a></li>
-                        <li><a href="privacy-policy.html">Privacy policy</a></li>
-                        <li><a href="subscription.html">Subscription</a></li>
+                    <p class="rbt-link-hover text-center text-lg-start">Copyright © 2025 <a href="https://aksarayotta.com/">Yotta Aksara.</a> All Rights Reserved</p>
                     </ul>
                 </div>
             </div>

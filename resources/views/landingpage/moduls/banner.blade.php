@@ -18,7 +18,7 @@
                                 <h1 class="banner-title">Internet of Things<span class="theme-gradient"><br>Yotta Aksara Energy</span></h1>
 
                                 <p class="description has-medium-font-size mt--20">Discover IoT innovations by Yotta — air quality monitoring, 
-                                    greenhouse automation, outdoor farming, and soil management & testing.</p>
+                                    greenhouse automation, Solar Dome, and soil management & testing.</p>
 
                                 <div class="slider-btn rbt-button-group justify-content-center">
                                     <a class="rbt-btn btn-gradient rbt-switch-btn rbt-switch-y" href="#">
@@ -76,11 +76,11 @@
                                 <div class="swiper-slide">
                                     <div class="team team-style--bottom variation-2">
                                         <div class="thumbnail">
-                                            <a href="#"><img src="{{ asset('assets/images/IoT/Outdoor Farming.png') }}" alt="Blog Images"></a>
+                                            <a href="#"><img src="{{ asset('assets/images/IoT/Solar Dome.png') }}" alt="Blog Images"></a>
                                         </div>
                                         <div class="content">
                                             <div class="inner">
-                                                <h4 class="title"><a href="#">Outdoor Farming</a></h4>
+                                                <h4 class="title"><a href="#">Solar Dome</a></h4>
                                                 <p class="designation">By Yotta</p>
                                             </div>
                                             <div class="icon-right">
