@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class LandingPageController extends Controller
 {
@@ -10,10 +11,33 @@ class LandingPageController extends Controller
     {
         return view('landingpage.moduls.banner');
     }
+
+
     public function airquality()
     {
-        return view('landingpage.moduls.airquality');
+        $sheetUrl = 'https://script.google.com/macros/s/AKfycbxo9qZCs2cfVAqO-BAKx2hYjNlgemrO10Knw39Jvz9cNZ3CWdhMIyRi_YXGQuZogr4DYQ/exec'; // Ganti dengan URL Apps Script kamu
+        $response = Http::get($sheetUrl);
+
+        $data = $response->json(); // Parsing JSON dari Google Sheet
+    
+        return view('landingpage.moduls.airquality', compact('data'));
     }
+
+    public function airqualityData()
+    {
+        $url = 'https://script.google.com/macros/s/AKfycbxo9qZCs2cfVAqO-BAKx2hYjNlgemrO10Knw39Jvz9cNZ3CWdhMIyRi_YXGQuZogr4DYQ/exec'; // Ganti dengan URL milikmu
+
+        $response = Http::get($url);
+
+        if ($response->successful()) {
+            return response()->json($response->json());
+        }
+
+        return response()->json(['error' => 'Gagal mengambil data'], 500);
+    }
+
+
+
     public function outdoor()
     {
         return view('landingpage.moduls.outdoor');

@@ -5,14 +5,12 @@
 @section('content')
 
 <div class="container py-5">
-
-    <!-- Chart Section -->
     <div class="row justify-content-center mb-4">
         <div class="col-xl-8">
             <div class="card glow-card">
                 <div class="card-header text-center">
-                    <h4 class="mb-0">📈 Monitoring PM2.5 & CO₂</h4>
-                    <p class="text-muted">Trend Data Terbaru</p>
+                    <h4 class="mb-0">📈 Monitoring Kualitas Udara</h4>
+                    <p class="text-muted">Data dari perangkat IoT (Google Sheets)</p>
                 </div>
                 <div class="card-body">
                     <canvas id="lineChart"></canvas>
@@ -21,95 +19,135 @@
         </div>
     </div>
 
-    <!-- Table Section -->
-    <div class="row">
-        <div class="col">
-            <div class="card glow-card">
-                <div class="card-header">
-                    <h5>Data Sensor Terkini</h5>
-                    <p class="card-text text-muted">Contoh 5 rekaman dari perangkat IoT</p>
-                </div>
-                <div class="card-body">
-                    <table class="table table-hover align-middle text-center">
-                        <thead>
-                            <tr>
-                                <th>ID</th><th>Device</th><th>PM2.5</th><th>CO₂</th>
-                                <th>Suhu (°C)</th><th>Kelembaban (%)</th><th>Waktu</th><th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td><td>dev001</td><td>28.5</td><td>420</td>
-                                <td>26.5</td><td>60</td><td>2025-06-17 20:00</td>
-                                <td><span class="badge badge-good">Good</span></td>
-                            </tr>
-                            <tr>
-                                <td>2</td><td>dev001</td><td>48.2</td><td>430</td>
-                                <td>27.1</td><td>58</td><td>2025-06-17 19:30</td>
-                                <td><span class="badge badge-fair">Fair</span></td>
-                            </tr>
-                            <tr>
-                                <td>3</td><td>dev001</td><td>75.0</td><td>450</td>
-                                <td>28.3</td><td>55</td><td>2025-06-17 19:00</td>
-                                <td><span class="badge badge-fair">Fair</span></td>
-                            </tr>
-                            <tr>
-                                <td>4</td><td>dev001</td><td>90.3</td><td>470</td>
-                                <td>29.1</td><td>50</td><td>2025-06-17 18:30</td>
-                                <td><span class="badge badge-poor">Poor</span></td>
-                            </tr>
-                            <tr>
-                                <td>5</td><td>dev001</td><td>34.6</td><td>415</td>
-                                <td>26.7</td><td>61</td><td>2025-06-17 18:00</td>
-                                <td><span class="badge badge-good">Good</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="text-end mt-3">
-                        <a href="#" class="btn btn-primary">📥 Unduh Data Bulanan</a>
-                    </div>
+    <!-- Progress Bar Section -->
+    <div class="rbt-progressbar-area bg-color-extra2 rbt-section-gap">
+        <div class="container">
+            <div class="row justify-content-center" id="iot-progress-display">
+                <div class="col-12 text-center">
+                    <p>📡 Memuat data sensor terakhir...</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    const ctx = document.getElementById('lineChart').getContext('2d');
-    new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: ['18:00', '18:30', '19:00', '19:30', '20:00'],
-            datasets: [
-                {
-                    label: 'PM2.5 (µg/m³)',
-                    data: [34.6, 90.3, 75.0, 48.2, 28.5],
-                    borderColor: 'rgba(255, 99, 132, 1)',
-                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                    tension: 0.4
-                },
-                {
-                    label: 'CO₂ (ppm)',
-                    data: [415, 470, 450, 430, 420],
-                    borderColor: 'rgba(54, 162, 235, 1)',
-                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                    tension: 0.4
-                }
-            ]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: {
-                    position: 'top'
-                }
-            },
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        }
-    });
-</script>
+
 @endsection
+
+@push('scripts')
+<script>
+function fetchIotData(apiUrl) {
+    $.getJSON(apiUrl, function(data) {
+        if (!data || data.length === 0) return;
+
+        const last = data[data.length - 1];
+        const suhu = parseFloat(last.temperature) || 0;
+        const kelembaban = parseFloat(last.humidity) || 0;
+
+        const html = `
+    <!-- Suhu -->
+    <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+        <div class="radial-progress-single text-center">
+            <div class="radial-progress" data-percent="${suhu}" data-bar-color="#00BFA5" data-track-color="#ECECEC">
+                <canvas></canvas>
+                <div class="circle-text">
+                    <h4 class="title">Suhu</h4>
+                    <span class="count">${suhu}</span><span class="unit">°C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kelembaban -->
+    <div class="col-lg-3 col-md-6 col-sm-12 mt-4">
+        <div class="radial-progress-single text-center">
+            <div class="radial-progress" data-percent="${kelembaban}" data-bar-color="#FFA000" data-track-color="#ECECEC">
+                <canvas></canvas>
+                <div class="circle-text">
+                    <h4 class="title">Kelembaban</h4>
+                    <span class="count">${kelembaban}</span><span class="unit">%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+`;
+
+
+        $('#iot-progress-display').html(html);
+
+        // Init EasyPieChart
+        $('.radial-progress').each(function () {
+            const $this = $(this);
+            const value = parseFloat($this.data('percent')) || 0;
+            const barColor = $this.data('bar-color') || '#059DFF';
+            const trackColor = $this.data('track-color') || '#F6F6F6';
+
+            const canvas = $('<canvas></canvas>').get(0);
+            canvas.width = 120;
+            canvas.height = 120;
+
+            // Simpan text
+            const $text = $this.find('.circle-text');
+
+            // Masukkan canvas ke dalam .radial-progress
+            $this.html(canvas).append($text);
+
+            // Init chart
+            new EasyPieChart(canvas, {
+                barColor: barColor,
+                trackColor: trackColor,
+                scaleColor: false,
+                lineCap: 'round',
+                lineWidth: 10,
+                size: 120,
+                animate: 1000
+            }).update(value);
+        });
+    });
+}
+
+const apiUrl = @json(route('airquality.data'));
+fetchIotData(apiUrl);
+setInterval(() => fetchIotData(apiUrl), 10000);
+</script>
+
+<style>
+    .radial-progress {
+  position: relative;      /* Menjadi acuan untuk positioning anak-anak */
+  width: 140px;
+  height: 140px;
+}
+
+.radial-progress canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+..circle-text {
+  position: absolute;      /* Supaya bisa ditempatkan bebas dalam parent */
+  top: 50%;                /* Pusat vertikal */
+  left: 50%;               /* Pusat horizontal */
+  transform: translate(-50%, -50%); /* Benar-benar center */
+}
+
+.circle-text .count {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.circle-text .unit {
+  font-size: 1rem;
+  color: #777;
+  margin-left: 2px;
+}
+
+.radial-progress-single h4.title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+</style>
+
+@endpush
